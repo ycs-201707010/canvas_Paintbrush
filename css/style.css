@@ -1,0 +1,76 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+body {
+  background-color: #eeeeee;
+
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.canvas {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+}
+
+.controls {
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .brush {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .btns {
+  margin-bottom: 30px;
+}
+
+.btns button {
+  all: unset; /* 버튼 스타일 초기화 (웹브라우저 별 기본 버튼 스타일을 해제) */
+
+  width: 80px;
+  background-color: white;
+  padding: 5px 0px; /* 상하, 좌우 안쪽 여백 */
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.btns button:active {
+  transform: scale(0.95);
+}
+
+.controls .color_select {
+  display: flex;
+}
+
+.color_select .jsColor {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.068);
+  cursor: pointer;
+
+  border-radius: 50%;
+}
